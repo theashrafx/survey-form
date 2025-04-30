@@ -1,0 +1,123 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+  <title>Survey Form</title>
+  <style>
+    h1 {
+      text-align: center;
+      padding: 40px;
+      margin: 13px 15px;
+    }
+
+    /*styling the form ( color paddin shadow)*/
+    form {
+      background-color: #fff;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+      background-color: orange;
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      font-size: 21px;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+    }
+
+    /*.form-control input[type="text"],
+    .form-control input[type="text"] {
+      display: inline-block;
+      width: auto;
+    }*/
+  </style>
+
+</head>
+
+<body>
+  <h1>Survey Form</h1>
+  <form action="form-contol">
+    <leble for="survey Form"></leble><br>
+    <leble for="name">Name</leble>
+    <div>
+      <input id="name" name="myName" placeholder="Enter your name" type="text" />
+    </div>
+    <br />
+    <leble for="Email">Email</leble>
+    <div>
+      <input id="email" name="myName" placeholder="Enter your email" type="text" />
+    </div>
+    <br />
+    <leble for="Address">Address</leble>
+    <div>
+      <input id="Address" name="myName" placeholder="Enter your Address" type="text" />
+    </div>
+    <br />
+    <leble for="Contect">Contect</leble>
+    <div>
+      <input id="contect" name="myName" placeholder="Enter your contect number" type="text" />
+    </div>
+    <br />
+    <leble for="Age">Age</leble>
+    <div>
+      <input id="Age" name="myName" placeholder="Enter your Age" type="text" />
+    </div>
+    <br />
+    <lable for="which option is best describe you ?">which option is best describe you ?</lable>
+    <div>
+      <select id="role" name="role">
+        <option selected="" value="Student">Student</option>
+        <option valu="Other">Other</option>
+        <option value="intern">Intern</option>
+        <option value="professional">Professional</option>
+      </select>
+    </div>
+    <p>Language and Framework known (check all that apply)</p>
+    <input id="C" name="C" type="checkbox" value="C" />
+    <label for="C">C</label><br />
+    <input id="C++" name="C++" type="checkbox" value="C++" />
+    <label for="C++">C++</label><br />
+    <input id="C#" name="C#" type="checkbox" value="C#" />
+    <label for="C#">C#</label><br />
+    <input id="python" name="python" type="checkbox" value="python"/>
+    <lable for="python">python</lable><br>
+    <input id="java" name="java" type="checkbox" value="java" />
+    <label for="java">java</label><br />
+    <input id="javascript" name="javascript" type="checkbox" value="javascript" />
+    <label for="javascript">javascript</label>
+    <br />
+    <p>Any comment or suggestions</p>
+    <!-- <div>
+      <br><textarea name="myText" cols="90" rows="5"></textarea>
+    </div>-->
+    <div>
+      <textarea id="comment" name="comment" placeholder="Enter your comment here">
+			</textarea>
+    </div>
+    <br />
+    <button type="submit" value="submit">submit</button>
+
+  </form>
+
+</body>
+
+</html>
